@@ -20,7 +20,7 @@
   "followUpMode": "one-at-a-time",
   "steeringMode": "one-at-a-time",
   "collapseChangelog": true,
-  "quietStartup": false,
+  "quietStartup": true,
   "enableInstallTelemetry": false,
   "doubleEscapeAction": "tree",
   "treeFilterMode": "default",

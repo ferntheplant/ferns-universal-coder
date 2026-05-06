@@ -23,19 +23,13 @@ Just put high level ideas + references here; split out into individual specs onc
 
 ## In-Flight
 
-- custom system prompts per model
-  - TODO: see if these [prompts](https://github.com/aliou/pi-harness/tree/main/extensions/modes/lib/prompt-families) are any good
-  - also this [one](https://github.com/mattpocock/skills/blob/main/ubiquitous-language/SKILL.md)
-  - [rjs](https://github.com/rjs/shaping-skills)
 - AI generated session names (pi-context)
-- response timer in footer (pi-usage)
 
 ## Extensions
 
 - [lsp](https://github.com/samfoy/pi-lsp-extension/tree/main)
   - make small changes to not register so many tools
-  - need to make it give diagnostics in batches at end of string of edits instead of on every tool call
-- images
+  - need to make it give diagnostics in batches instead of on every tool call
 - cmux sidebar status/notification
   - [winter](https://github.com/w-winter/dot314)
   - [sasha](https://github.com/sasha-computer/pi-cmux)
@@ -45,6 +39,7 @@ Just put high level ideas + references here; split out into individual specs onc
   - [toolchain](https://github.com/aliou/pi-toolchain)
   - [aliou guardrails](https://github.com/aliou/pi-guardrails)
 - [introspection](https://github.com/aliou/pi-harness/tree/main/extensions/introspection)
+  - see what tools/skills/extensions/context is currently available
 - [context-mode](https://github.com/mksglu/context-mode)
 - browser
   - [dev tools](https://github.com/ChromeDevTools/chrome-devtools-mcp)
@@ -56,7 +51,6 @@ Just put high level ideas + references here; split out into individual specs onc
 
 - worktree/cmux workspace management
   - should be a standalone script outside of Pi
-    - [effect cli](https://github.com/Effect-TS/effect/tree/main/packages/cli)
   - vercel [portless](https://github.com/vercel-labs/portless)
   - compatible with work tycho setup
 - fetch and resolve GH PR comments
@@ -67,6 +61,8 @@ Just put high level ideas + references here; split out into individual specs onc
   - [dex](https://dex.rip/guide)
   - matt pocock skills [domain model](https://github.com/mattpocock/skills/tree/main/domain-model) and [to-prd](https://github.com/mattpocock/skills/blob/main/to-prd/SKILL.md)
   - [hattice](https://github.com/mksglu/hatice)
+  - [rjs](https://github.com/rjs/shaping-skills)
+  - [missions](https://factory.ai/news/missions-architecture)
 - commit messages (likely a skill or command)
 - debugging
   - matt pocock skills [qa](https://github.com/mattpocock/skills/blob/main/qa/SKILL.md) and [triage](https://github.com/mattpocock/skills/blob/main/triage-issue/SKILL.md)
@@ -76,7 +72,8 @@ Just put high level ideas + references here; split out into individual specs onc
 
 - "profiles" (i.e. only load figma MCP when it's a frontend session)
 - time travel (i.e. tree + cwd snapshots)
-- sandbox runtimes (might be the solution to time-travel)
+  - jj?
+- sandbox/durable runtimes (might be the solution to time-travel)
   - [just bash](https://github.com/vercel-labs/just-bash)
   - [zmx](https://erock.prose.sh/zmx-ai-portal)
   - [gondolin](https://github.com/earendil-works/gondolin)
