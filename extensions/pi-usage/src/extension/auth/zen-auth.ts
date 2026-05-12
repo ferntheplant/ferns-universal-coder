@@ -1,4 +1,4 @@
-import type { ExtensionCommandContext, ExtensionContext } from "@mariozechner/pi-coding-agent";
+import type { ExtensionCommandContext, ExtensionContext } from "@earendil-works/pi-coding-agent";
 import { getZenAuthRecord, setZenAuthRecord, type ZenAuthRecord } from "../storage";
 
 const BALANCE_MARKER = 'data-slot="balance-value"';

@@ -1,5 +1,5 @@
-import type { ExtensionContext } from "@mariozechner/pi-coding-agent";
-import type { ContextUsage } from "@mariozechner/pi-coding-agent";
+import type { ExtensionContext } from "@earendil-works/pi-coding-agent";
+import type { ContextUsage } from "@earendil-works/pi-coding-agent";
 
 interface CachedContextUsage {
   key: string;

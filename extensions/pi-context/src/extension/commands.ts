@@ -2,7 +2,7 @@ import type {
   ExtensionAPI,
   ExtensionCommandContext,
   ExtensionContext,
-} from "@mariozechner/pi-coding-agent";
+} from "@earendil-works/pi-coding-agent";
 import { notifyError, notifyInfo, notifySuccess, notifyWarning } from "./notifications";
 import { getRuntimeStatus } from "./runtime";
 import {

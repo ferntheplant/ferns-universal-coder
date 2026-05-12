@@ -41,9 +41,9 @@ The root `package.json` declares workspaces and pins shared dep versions in a si
   "workspaces": {
     "packages": ["extensions/*", "skills/*", "templates/*"],
     "catalog": {
-      "@mariozechner/pi-coding-agent": "^0.67.2",
-      "@mariozechner/pi-ai": "^0.70.2",
-      "@mariozechner/pi-tui": "^0.70.2",
+      "@earendil-works/pi-coding-agent": "^0.67.2",
+      "@earendil-works/pi-ai": "^0.70.2",
+      "@earendil-works/pi-tui": "^0.70.2",
       "@types/bun": "latest",
       "typescript": "^5.9.3"
     }
@@ -55,7 +55,7 @@ Each workspace references catalog versions with the `"catalog:"` protocol, so Pi
 
 ```json
 "devDependencies": {
-  "@mariozechner/pi-coding-agent": "catalog:",
+  "@earendil-works/pi-coding-agent": "catalog:",
   "@types/bun": "catalog:",
   "typescript": "catalog:"
 }
@@ -121,7 +121,7 @@ The `templates/extension/` workspace is a working copy of this skeleton; `bun ru
 ### Prerequisites
 
 - [Bun](https://bun.sh) ≥ 1.3
-- [Pi coding agent](https://www.npmjs.com/package/@mariozechner/pi-coding-agent) (`pi`) on `PATH`, unless you run `./install.sh --skip-packages` (symlinks only)
+- [Pi coding agent](https://www.npmjs.com/package/@earendil-works/pi-coding-agent) (`pi`) on `PATH`, unless you run `./install.sh --skip-packages` (symlinks only)
 
 ### Steps
 

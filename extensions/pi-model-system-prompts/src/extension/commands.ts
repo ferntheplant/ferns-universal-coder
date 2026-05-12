@@ -1,5 +1,5 @@
 import { basename } from "node:path";
-import type { ExtensionAPI, ExtensionCommandContext } from "@mariozechner/pi-coding-agent";
+import type { ExtensionAPI, ExtensionCommandContext } from "@earendil-works/pi-coding-agent";
 import { toModelKey } from "./paths";
 import { notifyError, notifyInfo } from "./notifications";
 import {

@@ -1,4 +1,4 @@
-import type { ExtensionContext } from "@mariozechner/pi-coding-agent";
+import type { ExtensionContext } from "@earendil-works/pi-coding-agent";
 import type { ProviderAdapter, ProviderUsageResult } from "../providers/types";
 
 export const FOOTER_STATUS_KEY = "pi-usage";

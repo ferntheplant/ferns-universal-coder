@@ -5,7 +5,7 @@ import type {
   ToolResultEvent,
   TurnEndEvent,
   TurnStartEvent,
-} from "@mariozechner/pi-coding-agent";
+} from "@earendil-works/pi-coding-agent";
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 import {

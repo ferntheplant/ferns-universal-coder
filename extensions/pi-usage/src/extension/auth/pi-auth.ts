@@ -63,7 +63,7 @@ async function refreshOAuthAccessToken(
   authData: PiAuthData,
 ): Promise<string | null> {
   try {
-    const mod = await import("@mariozechner/pi-ai");
+    const mod = await import("@earendil-works/pi-ai");
     const resolver = (mod as { getOAuthApiKey?: unknown }).getOAuthApiKey;
 
     if (typeof resolver !== "function") {

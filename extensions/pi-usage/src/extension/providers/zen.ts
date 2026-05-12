@@ -1,4 +1,4 @@
-import type { ExtensionContext } from "@mariozechner/pi-coding-agent";
+import type { ExtensionContext } from "@earendil-works/pi-coding-agent";
 import { validateZenDashboardAuth } from "../auth/zen-auth";
 import { getZenAuthRecord, type ZenAuthRecord } from "../storage";
 import type { DashboardSection, ProviderAdapter, ProviderUsageResult } from "./types";

@@ -5,7 +5,7 @@ import type {
   ToolResultEvent,
   TurnEndEvent,
   TurnStartEvent,
-} from "@mariozechner/pi-coding-agent";
+} from "@earendil-works/pi-coding-agent";
 import { homedir } from "node:os";
 import { join } from "node:path";
 

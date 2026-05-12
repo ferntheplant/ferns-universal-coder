@@ -1,6 +1,6 @@
 import { describe, expect, it } from "bun:test";
 import { createStickyContextUsageResolver } from "../../src/extension/ui/context-usage";
-import type { ExtensionContext } from "@mariozechner/pi-coding-agent";
+import type { ExtensionContext } from "@earendil-works/pi-coding-agent";
 
 function createContext(
   sessionId: string,

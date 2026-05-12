@@ -12,12 +12,12 @@
     "gray-matter": "^4.0.3"
   },
   "devDependencies": {
-    "@mariozechner/pi-coding-agent": "catalog:",
+    "@earendil-works/pi-coding-agent": "catalog:",
     "@types/bun": "catalog:",
     "typescript": "catalog:"
   },
   "peerDependencies": {
-    "@mariozechner/pi-coding-agent": "catalog:",
+    "@earendil-works/pi-coding-agent": "catalog:",
     "typescript": "catalog:"
   }
 }

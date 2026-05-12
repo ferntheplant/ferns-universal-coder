@@ -2,7 +2,7 @@ import type {
   BeforeAgentStartEvent,
   ExtensionAPI,
   ExtensionContext,
-} from "@mariozechner/pi-coding-agent";
+} from "@earendil-works/pi-coding-agent";
 import { registerCommands } from "./commands";
 import { notifyError, notifyInfo, notifyWarning } from "./notifications";
 import { modelPromptsDir } from "./paths";

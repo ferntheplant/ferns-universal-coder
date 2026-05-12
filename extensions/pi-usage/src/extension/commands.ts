@@ -1,4 +1,4 @@
-import type { ExtensionAPI, ExtensionCommandContext } from "@mariozechner/pi-coding-agent";
+import type { ExtensionAPI, ExtensionCommandContext } from "@earendil-works/pi-coding-agent";
 import { bootstrapZenAuthFromCurl } from "./auth/zen-auth";
 import { notifyError, notifyInfo, notifySuccess } from "./notifications";
 import { getConfiguredProviders, getProviderRegistry } from "./providers/registry";
