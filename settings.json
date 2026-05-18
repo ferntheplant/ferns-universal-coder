@@ -2,14 +2,11 @@
   "packages": [
     "npm:pi-mcp-adapter",
     "npm:pi-terminal-signals",
-    "npm:pi-answer",
-    "npm:pi-hashline-readmap",
-    "npm:@sherif-fanous/pi-rtk",
     "npm:@tmustier/pi-raw-paste",
-    "git:github.com/jonjonrankin/pi-caveman",
-    "npm:pi-smart-fetch"
+    "npm:pi-smart-fetch",
+    "npm:pi-hashline-readmap"
   ],
-  "lastChangelogVersion": "0.74.0",
+  "lastChangelogVersion": "0.75.1",
   "images": {
     "blockImages": false
   },
@@ -24,7 +21,7 @@
   "enableInstallTelemetry": false,
   "doubleEscapeAction": "tree",
   "treeFilterMode": "default",
-  "theme": "rose-pine-dawn",
+  "theme": "rose-pine-moon",
   "editorPaddingX": 0,
   "defaultProvider": "opencode",
   "defaultModel": "qwen3.6-plus",

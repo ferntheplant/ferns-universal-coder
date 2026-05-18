@@ -98,18 +98,17 @@ Just put high level ideas + references here; split out into individual specs onc
 - reasoning traces
 - tool use visualizer
 - quota tracker
+- introspection
 
 ### Context
 
 - bash tool result compression
 - hashline read + edits
 - AST grep
-- graph search
-- long term memory
+- graph codebase search
 - session mining
 - lsp integration
 - `/btw` mode
-- introspection (inspect current context)
 
 ### Ecosystem
 
@@ -165,7 +164,7 @@ Just put high level ideas + references here; split out into individual specs onc
   - worker
   - verifier
 - follow Factory AI missions architecture
-  - dream is interactive session with product + tech leads -> fully autonomous implementation via worker<-->verifier iterations
+  - dream is interactive session with product + tech leads -> fully autonomous     implementation via worker<-->verifier iterations
   - I like their appeal to bitter lesson: do not provide strict structure for how planning looks and let model intelligence design its own planning solution
     - all the orchestrator gets to know is that "milestones" are handed off to worker/verifier pairs to implement
       - tier 1 and 2 verification before verifier handoff
@@ -178,3 +177,13 @@ Just put high level ideas + references here; split out into individual specs onc
 - give each pi session yet another zmx session to serve as a bash "sandbox"
 - extensions that need singletons (langfuse server, code review server, etc) share their resource as a zmx session
 - the sdk wrapping zmx should expose a generic interface that we can fill with exe.dev later
+
+## Autonomy vs Interactivity
+
+The features for a coding **assistant** are very different than those for an autonomous **agent**. The **assistant** is functionally a tool for thought for myself as I execute the task - it's my google search, rubber duck, and quick companion who can make edits faster than I can. The **agent** is essentially a trustworthy coworker I completely delegate away to by declaring intent and later confirming that their output matches my intent.
+
+In the featureset listed above most features apply to both types code coding harness but in subtly different ways. For example; browser use for an assistant is a nicety that helps me share my visual context with the assistant easily but for the agent it's an essential tool for self-verifying its work against my declared intent. In an interactive mode the HUD is for me to see realtime stats but for an autonomous system the HUD allows me to monitor intent drift across multiple agents and quickly update intent, validate outputs, and apply steering corrections.
+
+### The Canvas vs The Control Plane
+
+An assistant needs a realtime canvas but an agent needs a batch processing control plane that is optimized for me to declare intents and monitor drift. Note that the act of declaring intent is likely best served by an interactive tool for thought meaning the necessary canvas takes 2 forms: one for intent and one for assistance. Off the top of my head an interactive intent-tool might look like a direct chat side-by-side with the intent document where an LLM serves as a thought partner for drafting an intent-doc of appropriate detail and scope. This is similar to the assistant which serves as a thought partner in directly writing code; are these really different tools?
